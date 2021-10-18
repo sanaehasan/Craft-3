@@ -1,4 +1,4 @@
-  <div class="my-8">
+  {# <div class="my-8">
     {% for block in blocks %}
       <div class="my-4">
         {% if block.type == 'text' %}
@@ -10,4 +10,56 @@
         {% endif %}
       </div>
     {% endfor %}
-  </div>
+  </div> #}
+  {# Set the GraphQL query #}
+{% set query %}
+{
+  entry(slug: "section1") {
+    title
+    postDate @formatDateTime(format: "d M Y")
+    postDateAlt: postDate @formatDateTime(format: "Y-m-d")
+    url
+    ... on blog_blog_Entry {
+      
+      postContent {
+        ... on postContent_text_BlockType {
+          typeHandle
+          text
+        }
+        ... on postContent_image_BlockType {
+          typeHandle
+          image {
+            title
+            url
+          }
+        }
+      }
+      postCategories {
+        title
+        url
+      }
+    }
+  }
+}
+
+
+{% endset %}
+
+
+{# Query the data via Twig! #}
+{% set r = gql(query) %}
+
+{# {% dd r.data.entry.postContent %} #}
+
+
+
+
+ {%  for c in r.data.entry.postContent %}
+      {% if c.typeHandle == 'text' %}
+          {{ c.text }}
+        {% elseif c.typeHandle== 'image' %}
+          {% for image in c.image %}
+            <img src="{{ image.url }}" alt="{{ image.title }}" />
+          {% endfor %}
+          {% endif %}
+        {% endfor %}

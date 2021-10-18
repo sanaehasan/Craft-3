@@ -1,0 +1,23 @@
+isPublic: true
+name: 'Public Schema'
+scope:
+  - 'elements.drafts:read'
+  - 'elements.revisions:read'
+  - 'elements.inactive:read'
+  - 'sections.7e91932c-0ddd-436a-a76b-323248640ad6:read' # Blog
+  - 'entrytypes.bf874c75-c320-4ba0-b8a3-7a85049c7e77:read' # Blog
+  - 'volumes.1b917b4f-ab49-47ad-9d59-9af2e408f825:read' # Blog
+  - 'usergroups.everyone:read'
+  - 'categorygroups.e52d832e-fdaf-47bf-a192-e1a80d146e96:read' #  Blog Categories
+  - 'sections.7e91932c-0ddd-436a-a76b-323248640ad6:edit' # Blog
+  - 'entrytypes.bf874c75-c320-4ba0-b8a3-7a85049c7e77:edit' # Blog
+  - 'entrytypes.bf874c75-c320-4ba0-b8a3-7a85049c7e77:create' # Blog
+  - 'entrytypes.bf874c75-c320-4ba0-b8a3-7a85049c7e77:save' # Blog
+  - 'entrytypes.bf874c75-c320-4ba0-b8a3-7a85049c7e77:delete' # Blog
+  - 'volumes.1b917b4f-ab49-47ad-9d59-9af2e408f825:edit' # Blog
+  - 'volumes.1b917b4f-ab49-47ad-9d59-9af2e408f825:create' # Blog
+  - 'volumes.1b917b4f-ab49-47ad-9d59-9af2e408f825:save' # Blog
+  - 'volumes.1b917b4f-ab49-47ad-9d59-9af2e408f825:delete' # Blog
+  - 'categorygroups.e52d832e-fdaf-47bf-a192-e1a80d146e96:edit' #  Blog Categories
+  - 'categorygroups.e52d832e-fdaf-47bf-a192-e1a80d146e96:save' #  Blog Categories
+  - 'categorygroups.e52d832e-fdaf-47bf-a192-e1a80d146e96:delete' #  Blog Categories

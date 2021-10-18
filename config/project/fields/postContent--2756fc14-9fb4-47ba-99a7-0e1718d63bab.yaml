@@ -1,0 +1,16 @@
+columnSuffix: lcbraofl
+contentColumnType: string
+fieldGroup: 54c3ccf3-230b-400f-9cb5-cf22dc8fc937 # Blog Post Fields
+handle: postContent
+instructions: ''
+name: 'Post Content '
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_postcontent}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

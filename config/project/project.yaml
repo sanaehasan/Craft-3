@@ -1,0 +1,41 @@
+dateModified: 1634482255
+email:
+  fromEmail: sanae.k1986@gmail.com
+  fromName: test1
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    0fc1dbbc-f51b-4f4a-8b2f-86c6449a1cc3: Summary # Summary
+    1b917b4f-ab49-47ad-9d59-9af2e408f825: Blog # Blog
+    7e91932c-0ddd-436a-a76b-323248640ad6: Blog # Blog
+    7edf93b0-d034-4b31-9ed8-b04802ee7d2a: 'Post Categories' # Post Categories
+    54c3ccf3-230b-400f-9cb5-cf22dc8fc937: 'Blog Post Fields' # Blog Post Fields
+    0083cb2d-c6a7-44ad-8b95-a77d0d767a10: test1 # test1
+    91e581ce-25e3-477a-9526-17cb307c40ad: 'Feature Image ' # Feature Image 
+    2756fc14-9fb4-47ba-99a7-0e1718d63bab: 'Post Content ' # Post Content 
+    4025f19c-5d4f-4509-85a3-91636ddb1c6c: test1 # test1
+    7069baa7-a178-466d-9d94-6fcd112849e1: \text # \text
+    54177621-985c-4739-834d-34de9c7d9519: Image # Image
+    73459634-3c33-448a-9350-5c5c821dbabf: 'Public Schema' # Public Schema
+    aa47f385-6d6f-4c62-9404-947a9295c0f6: Text # Text
+    bf874c75-c320-4ba0-b8a3-7a85049c7e77: Blog # Blog
+    e52d832e-fdaf-47bf-a192-e1a80d146e96: ' Blog Categories' #  Blog Categories
+    eeb979bf-c0a6-442f-b8a9-60131af8fd63: Common # Common
+    fb6f2d6e-04c1-4630-ab50-8eee72832e57: image # image
+plugins:
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+system:
+  edition: pro
+  live: true
+  name: test1
+  schemaVersion: 3.7.8
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

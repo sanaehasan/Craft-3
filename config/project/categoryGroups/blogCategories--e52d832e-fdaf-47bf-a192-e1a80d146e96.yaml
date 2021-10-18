@@ -1,0 +1,50 @@
+defaultPlacement: end
+fieldLayouts:
+  b0014421-507e-4a06-8fa2-a1b20b9d7fbe:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 7edf93b0-d034-4b31-9ed8-b04802ee7d2a # Post Categories
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: blogCategories
+name: ' Blog Categories'
+siteSettings:
+  0083cb2d-c6a7-44ad-8b95-a77d0d767a10: # test1
+    hasUrls: true
+    template: null
+    uriFormat: 'blog-categories/{slug}'
+structure:
+  maxLevels: 1
+  uid: 9afc5319-4383-443d-bd05-4d8738dd1acf

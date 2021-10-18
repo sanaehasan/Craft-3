@@ -1,0 +1,19 @@
+columnSuffix: qkcdwtps
+contentColumnType: text
+fieldGroup: 54c3ccf3-230b-400f-9cb5-cf22dc8fc937 # Blog Post Fields
+handle: summary
+instructions: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam'
+name: Summary
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '1'
+  multiline: '1'
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

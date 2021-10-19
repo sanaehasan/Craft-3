@@ -184010,3 +184010,26 @@ video {
             animation: bounce 1s infinite;
   }
 }
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color : white;
+}
+.centered h1{
+  color : white;
+}
+.featureImage{
+  position: relative;
+  text-align: center;
+}
+img{
+  max-width: 100%;
+  max-height: 100%;
+  display: block; /* remove extra space below image */
+}
+.blockText,a{
+  color :#112e66;
+}

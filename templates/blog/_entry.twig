@@ -7,24 +7,23 @@
   quality: 90
   
 } %} #}
-{% block content %}
-  <h1 class="text-4xl text-black font-display my-4">{{ entry.title }}</h1>
-
-  <time class="text-sm block pb-4" datetime="{{ entry.postDate | date('Y-m-d') }}">{{ entry.postDate | date('d M Y') }}</time>
+{% block content %} 
 {#get feature image#}
-<div class="grid-cols-12">
+<div class="grid-cols-12 featureImage" style="background-color:#112e66;">
+
 {% if entry.featureImage|length %}
     {% for image in entry.featureImage.all() %}
      <img src="{{ image.getUrl(featureImage) }}" alt="{{ image.title }}" />
     {% endfor %}
   {% endif %}
-  {#get matrix block content#}
+   {# get title and date created #}
+   <div class="centered">
+   <h1 class="text-4xl text-black font-display my-4">{{ entry.title }}</h1>
+   <time class="text-sm block pb-4" datetime="{{ entry.postDate | date('Y-m-d') }}">{{ entry.postDate | date('d M Y') }}</time>
+   </div>
 </div>
-  {# include matrix section blocks  #}
+   {#get matrix block content#}
 {% include "_includes/post-blocks" with { blocks: entry.postContent.all() } only %}
-
-
-
 
 {# display post categories 
   {% if entry.postCategories|length %}

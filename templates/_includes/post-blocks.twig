@@ -11,6 +11,8 @@
       </div>
     {% endfor %}
   </div> #}
+
+
   {# Set the GraphQL query #}
 {% set query %}
 {
@@ -41,25 +43,23 @@
     }
   }
 }
-
-
 {% endset %}
 
 
 {# Query the data via Twig! #}
 {% set r = gql(query) %}
-
-{# {% dd r.data.entry.postContent %} #}
-
-
-
-
+{# display data #}
+<div class="grid-cols-12" style="margin-top:2em;">
  {%  for c in r.data.entry.postContent %}
-      {% if c.typeHandle == 'text' %}
-          {{ c.text }}
-        {% elseif c.typeHandle== 'image' %}
+     
+        {% if c.typeHandle== 'image' %}
+         <div class="grid  grid-cols-3" style="margin-left:2em">
           {% for image in c.image %}
+           <div>
             <img src="{{ image.url }}" alt="{{ image.title }}" />
+          </div>
           {% endfor %}
-          {% endif %}
-        {% endfor %}
+          </div>
+        {% endif %}
+   {% endfor %}
+</div>
